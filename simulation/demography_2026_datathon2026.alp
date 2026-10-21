@@ -1,0 +1,4597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+*************************************************
+	         AnyLogic Project File
+*************************************************
+-->
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.9.10.202609231424" AlpVersion="8.9.10">
+<Model>
+	<Id>1791797909553</Id>
+	<Name><![CDATA[demography_2026_datathon2026]]></Name>
+	<EngineVersion>6</EngineVersion>
+	<JavaPackageName><![CDATA[demography_2026_datathon2026]]></JavaPackageName>
+	<ModelTimeUnit><![CDATA[Year]]></ModelTimeUnit>
+	<Folders>
+	</Folders>
+	<ActiveObjectClasses>
+		<!--   =========   Active Object Class   ========  -->
+		<ActiveObjectClass>
+			<Id>1791797909569</Id>
+			<Name><![CDATA[Main]]></Name>
+			<Generic>false</Generic>
+			<GenericParameter>
+				<Id>1791797909580</Id>
+				<Name><![CDATA[1791797909580]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T extends Agent]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameter:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
+			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
+			<MakeDefaultViewArea>true</MakeDefaultViewArea>
+			<SceneGridColor/>
+			<SceneBackgroundColor>-4144960</SceneBackgroundColor>
+            <EnvironmentResourceRef></EnvironmentResourceRef>
+            <EnvironmentType>NONE</EnvironmentType>
+            <EnvironmentRotationX>0</EnvironmentRotationX>
+            <EnvironmentRotationY>0</EnvironmentRotationY>
+            <EnvironmentRotationZ>0</EnvironmentRotationZ>
+            <EnvironmentIntensity>1</EnvironmentIntensity>
+			<AgentProperties>
+				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
+				<MessageType><![CDATA[Object]]></MessageType>
+				<PhysicalLength Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalLength>
+				<PhysicalWidth Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalWidth>
+				<PhysicalHeight Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalHeight>
+			</AgentProperties>
+			<EnvironmentProperties>
+				<EnableSteps>false</EnableSteps>
+				<StepDurationCode Class="CodeUnitValue">
+					<Code><![CDATA[1.0]]></Code>
+					<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+				</StepDurationCode>
+				<SpaceType>CONTINUOUS</SpaceType>
+				<WidthCode><![CDATA[500]]></WidthCode>
+				<HeightCode><![CDATA[500]]></HeightCode>
+				<ZHeightCode><![CDATA[0]]></ZHeightCode>
+				<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
+				<RowsCountCode><![CDATA[100]]></RowsCountCode>
+				<NeigborhoodType>MOORE</NeigborhoodType>
+				<LayoutType>USER_DEF</LayoutType>
+				<NetworkType>USER_DEF</NetworkType>
+				<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
+				<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
+				<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
+				<MCode><![CDATA[10]]></MCode>
+				<LineStyle>SOLID</LineStyle>
+				<LineWidth>1</LineWidth>
+				<LineColor>-16777216</LineColor>
+				<LineZOrder>UNDER_AGENTS</LineZOrder>
+				<LineArrow>NONE</LineArrow>
+				<LineArrowPosition>END</LineArrowPosition>
+			</EnvironmentProperties>
+			<DatasetsCreationProperties>
+				<AutoCreate>true</AutoCreate>
+					<Id>1791797909568</Id>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1791878400000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+					</RecurrenceCode>
+			</DatasetsCreationProperties>
+			<ScaleRuler>
+				<Id>1791797909573</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>0</X><Y>-150</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<CurrentLevel>1791797909586</CurrentLevel>
+			<Variables>
+				<Variable Class="AuxVariable">
+					<Id>1791803006847</Id>
+					<Name><![CDATA[kCal]]></Name>
+					<X>484.807</X><Y>502.03</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[birthsRef / (fW * 9412958 * (1 - dshare_1) * TFR_N + fW * 9412958 * dshare_1 * TFR_D)]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color>-4073239</Color>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1791803032449</Id>
+					<Name><![CDATA[Pop]]></Name>
+					<X>575.537</X><Y>507.335</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[D_0 + D_1 + D_2 + D_3 + N_0 + N_1 + N_2 + N_3]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color>-4073239</Color>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1791803053842</Id>
+					<Name><![CDATA[H]]></Name>
+					<X>679.227</X><Y>507.335</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[(D_0 + D_1 + D_2 + D_3) / Pop]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color>-4073239</Color>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1791803232246</Id>
+					<Name><![CDATA[births]]></Name>
+					<X>808.838</X><Y>470.196</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[birthsD + birthsN]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color>-4073239</Color>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1791805687132</Id>
+					<Name><![CDATA[entryNow]]></Name>
+					<X>627.382</X><Y>565.697</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[entry0 * (1 + ramp * (entryMult - 1))]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color>-4073239</Color>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1791805692233</Id>
+					<Name><![CDATA[exitNow]]></Name>
+					<X>627.382</X><Y>528.559</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[exitRate * (1 + ramp * (exitMult - 1))]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color>-4073239</Color>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1791805921741</Id>
+					<Name><![CDATA[ramp]]></Name>
+					<X>731.071</X><Y>496.724</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[policyOn ? min(1.0, max(0.0, (time() - policyT0) / policyRamp)) : 0.0]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color>-4073239</Color>
+					</Properties>
+
+				</Variable>
+				<Variable Class="AuxVariable">
+					<Id>1791805927509</Id>
+					<Name><![CDATA[entry0]]></Name>
+					<X>731.071</X><Y>528.559</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties External="false" Constant="false" Array="false">
+						<Formula><![CDATA[exitRate * H0 / (1.0 - H0)]]></Formula>
+						<Value><![CDATA[0]]></Value>
+						<Color>-4073239</Color>
+					</Properties>
+
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1791801544748</Id>
+					<Name><![CDATA[D_0]]></Name>
+					<X>157.986</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<InitialValue><![CDATA[5855976*dshare_0]]></InitialValue>
+						<Color>-4073239</Color>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1791801587236</Id>
+					<Name><![CDATA[N_0]]></Name>
+					<X>157.986</X><Y>417.14</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<InitialValue><![CDATA[5855976*(1-dshare_0)]]></InitialValue>
+						<Color>-4073239</Color>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1791801618656</Id>
+					<Name><![CDATA[D_1]]></Name>
+					<X>321.995</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<InitialValue><![CDATA[9412958*dshare_1]]></InitialValue>
+						<Color>-4073239</Color>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1791801618671</Id>
+					<Name><![CDATA[N_1]]></Name>
+					<X>321.995</X><Y>417.14</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<InitialValue><![CDATA[9412958*(1-dshare_1)]]></InitialValue>
+						<Color>-4073239</Color>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1791801622431</Id>
+					<Name><![CDATA[D_2]]></Name>
+					<X>530.734</X><Y>380</Y>
+					<Label><X>10</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<InitialValue><![CDATA[2992913*dshare_2]]></InitialValue>
+						<Color>-4073239</Color>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1791801622437</Id>
+					<Name><![CDATA[N_2]]></Name>
+					<X>575.463</X><Y>411.834</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<InitialValue><![CDATA[2992913*(1-dshare_2)]]></InitialValue>
+						<Color>-4073239</Color>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1791801623331</Id>
+					<Name><![CDATA[D_3]]></Name>
+					<X>694.743</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<InitialValue><![CDATA[1771995*dshare_3]]></InitialValue>
+						<Color>-4073239</Color>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1791801623339</Id>
+					<Name><![CDATA[N_3]]></Name>
+					<X>724.566</X><Y>422.445</Y>
+					<Label><X>-5</X><Y>-30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>20</Width>
+					<Height>20</Height>
+						<InitialValue><![CDATA[1771995*(1-dshare_3)]]></InitialValue>
+						<Color>-4073239</Color>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802337279</Id>
+					<Name><![CDATA[flow]]></Name>
+					<X>157.986</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801544748" TargetId="1791801618656" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[D_0 / 15.0]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>2</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>63</X><Y>0</Y></Point>
+							<Point><X>77</X><Y>0</Y></Point>
+							<Point><X>157</X><Y>0</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802349309</Id>
+					<Name><![CDATA[flow1]]></Name>
+					<X>321.995</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801618656" TargetId="1791801622431" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[D_1 / 35.0]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>97</X><Y>0</Y></Point>
+							<Point><X>201</X><Y>0</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802356271</Id>
+					<Name><![CDATA[flow2]]></Name>
+					<X>530.734</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801622431" TargetId="1791801623331" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[D_2 / 15.0]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>77</X><Y>0</Y></Point>
+							<Point><X>157</X><Y>0</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802363110</Id>
+					<Name><![CDATA[flow3]]></Name>
+					<X>157.986</X><Y>417.14</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801587236" TargetId="1791801618671" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[N_0 / 15.0]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>77</X><Y>0</Y></Point>
+							<Point><X>157</X><Y>0</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802374575</Id>
+					<Name><![CDATA[flow4]]></Name>
+					<X>321.995</X><Y>417.14</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801618671" TargetId="1791801622437" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[N_1 / 35.0]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>107</X><Y>0</Y></Point>
+							<Point><X>173</X><Y>0</Y></Point>
+							<Point><X>248</X><Y>-7</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802421809</Id>
+					<Name><![CDATA[flow5]]></Name>
+					<X>575.463</X><Y>411.834</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801622437" TargetId="1791801623339" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[N_2 / 15.0]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>55</X><Y>1</Y></Point>
+							<Point><X>144</X><Y>9</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802556106</Id>
+					<Name><![CDATA[flow6]]></Name>
+					<X>157.986</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801544748" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[D_0 * mr_0]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>0</X><Y>-17</Y></Point>
+							<Point><X>0</X><Y>-33</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802570357</Id>
+					<Name><![CDATA[flow7]]></Name>
+					<X>322.13</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801618656" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[D_1 * mr_1]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-21</X><Y>-20</Y></Point>
+							<Point><X>-20</X><Y>-39</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802594630</Id>
+					<Name><![CDATA[flow9]]></Name>
+					<X>694.743</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801623331" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[D_3 * mr_3]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>0</X><Y>-17</Y></Point>
+							<Point><X>0</X><Y>-33</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802610048</Id>
+					<Name><![CDATA[flow10]]></Name>
+					<X>158.677</X><Y>417.14</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801587236" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[N_0 * mr_0]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-26</X><Y>15</Y></Point>
+							<Point><X>-26</X><Y>26</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802627744</Id>
+					<Name><![CDATA[flow11]]></Name>
+					<X>321.311</X><Y>417.14</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801618671" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[N_1 * mr_1]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-45</X><Y>15</Y></Point>
+							<Point><X>-44</X><Y>31</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802640167</Id>
+					<Name><![CDATA[flow12]]></Name>
+					<X>575.505</X><Y>411.834</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801622437" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[N_2 * mr_2]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-69</X><Y>20</Y></Point>
+							<Point><X>-80</X><Y>31</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802700581</Id>
+					<Name><![CDATA[flow13]]></Name>
+					<X>725.18</X><Y>422.445</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801623339" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[N_3 * mr_3]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-101</X><Y>18</Y></Point>
+							<Point><X>-101</X><Y>36</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802753384</Id>
+					<Name><![CDATA[flow8]]></Name>
+					<X>530.944</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801622431" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[D_2 * mr_2]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-127</X><Y>-20</Y></Point>
+							<Point><X>-127</X><Y>-39</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802851938</Id>
+					<Name><![CDATA[flow14]]></Name>
+					<X>157.986</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801544748" TargetId="1791801587236" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[exitNow * D_0]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>55</X><Y>15</Y></Point>
+							<Point><X>0</X><Y>36</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802884980</Id>
+					<Name><![CDATA[flow15]]></Name>
+					<X>157.986</X><Y>417.14</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801587236" TargetId="1791801544748" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[entryNow * N_0]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-50</X><Y>-23</Y></Point>
+							<Point><X>0</X><Y>-39</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802898880</Id>
+					<Name><![CDATA[flow16]]></Name>
+					<X>321.995</X><Y>417.14</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801618671" TargetId="1791801618656" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[entryNow * N_1]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>41</X><Y>-17</Y></Point>
+							<Point><X>30</X><Y>-22</Y></Point>
+							<Point><X>0</X><Y>-39</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802915162</Id>
+					<Name><![CDATA[flow17]]></Name>
+					<X>575.463</X><Y>411.834</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801622437" TargetId="1791801622431" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[entryNow * N_2]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>0</X><Y>-17</Y></Point>
+							<Point><X>-50</X><Y>-33</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802924516</Id>
+					<Name><![CDATA[flow18]]></Name>
+					<X>724.566</X><Y>422.445</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801623339" TargetId="1791801623331" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[entryNow * N_3]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>55</X><Y>-28</Y></Point>
+							<Point><X>-37</X><Y>-44</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802945115</Id>
+					<Name><![CDATA[flow19]]></Name>
+					<X>321.995</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801618656" TargetId="1791801618671" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[exitNow * D_1]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-37</X><Y>20</Y></Point>
+							<Point><X>0</X><Y>36</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802957770</Id>
+					<Name><![CDATA[flow20]]></Name>
+					<X>530.734</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801622431" TargetId="1791801622437" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[exitNow * D_2]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-21</X><Y>15</Y></Point>
+							<Point><X>41</X><Y>31</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791802967039</Id>
+					<Name><![CDATA[flow21]]></Name>
+					<X>694.743</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1791801623331" TargetId="1791801623339" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[exitNow * D_3]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-21</X><Y>20</Y></Point>
+							<Point><X>22</X><Y>41</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791803284122</Id>
+					<Name><![CDATA[birthsD]]></Name>
+					<X>38.705</X><Y>380</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1791801544748" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[kCal * TFR_D * fW * D_1]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>2</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>22</X><Y>0</Y></Point>
+							<Point><X>55</X><Y>0</Y></Point>
+							<Point><X>115</X><Y>0</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1791803320858</Id>
+					<Name><![CDATA[birthsN]]></Name>
+					<X>38.705</X><Y>417.14</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1791801587236" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[kCal * TFR_N * fW * N_1]]></Formula>
+						<Color>-4073239</Color>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>41</X><Y>0</Y></Point>
+							<Point><X>115</X><Y>0</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791801976573</Id>
+					<Name><![CDATA[TFR_D]]></Name>
+					<X>147.815</X><Y>470.196</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[3.3]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791801976559</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791802006169</Id>
+					<Name><![CDATA[TFR_N]]></Name>
+					<X>147.815</X><Y>491.419</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[2.8]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791802006167</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791802049805</Id>
+					<Name><![CDATA[exitRate]]></Name>
+					<X>147.815</X><Y>512.641</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.3333]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791802049803</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791802088152</Id>
+					<Name><![CDATA[fW]]></Name>
+					<X>147.815</X><Y>533.864</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.497]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791802088150</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791802109270</Id>
+					<Name><![CDATA[birthsRef]]></Name>
+					<X>147.815</X><Y>555.087</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[376863]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791802109268</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791802136122</Id>
+					<Name><![CDATA[mr_0]]></Name>
+					<X>342.234</X><Y>475.502</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.000748]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791802136120</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791802176581</Id>
+					<Name><![CDATA[mr_1]]></Name>
+					<X>342.234</X><Y>491.419</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.001426]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791802176579</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791802178339</Id>
+					<Name><![CDATA[mr_2]]></Name>
+					<X>342.234</X><Y>507.335</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.008981]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791802178337</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791802180624</Id>
+					<Name><![CDATA[mr_3]]></Name>
+					<X>342.234</X><Y>523.253</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.048225]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791802180622</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791805864046</Id>
+					<Name><![CDATA[entryMult]]></Name>
+					<X>782.916</X><Y>560.392</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.7]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791805864044</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791806090779</Id>
+					<Name><![CDATA[H0]]></Name>
+					<X>147.815</X><Y>586.92</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.044]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791806090777</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791807524370</Id>
+					<Name><![CDATA[dshare_0]]></Name>
+					<X>277.43</X><Y>549.781</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.04081]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791807524368</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791807563044</Id>
+					<Name><![CDATA[dshare_1]]></Name>
+					<X>471.847</X><Y>565.697</Y>
+					<Label><X>10</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.03725]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791807563042</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791807563569</Id>
+					<Name><![CDATA[dshare_2]]></Name>
+					<X>277.43</X><Y>581.615</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.04911]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791807563567</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791807563962</Id>
+					<Name><![CDATA[dshare_3]]></Name>
+					<X>379.721</X><Y>583.821</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.08001]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791807563960</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791808715879</Id>
+					<Name><![CDATA[exitMult]]></Name>
+					<X>912.528</X><Y>496.724</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[2]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791808715877</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791808718765</Id>
+					<Name><![CDATA[policyRamp]]></Name>
+					<X>899.568</X><Y>517.947</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[5]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791808718763</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791808721604</Id>
+					<Name><![CDATA[policyT0]]></Name>
+					<X>925.489</X><Y>533.864</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[2]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791808721602</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1791808724242</Id>
+					<Name><![CDATA[policyOn]]></Name>
+					<X>925.489</X><Y>555.087</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[boolean]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1791808724240</Id>
+							<EditorContolType>CHECK_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+			</Variables>
+			<Dependences>
+				
+				<Link SourceId="1791801618671" TargetId="1791802374575" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>107</X><Y>0</Y></Direction>
+					<Id>1791803707998</Id>
+					<Name><![CDATA[N_1 - flow4]]></Name>
+					<X>321.995</X><Y>417.14</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801544748" TargetId="1791803053842" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>517</X><Y>127</Y></Direction>
+					<Id>1791803734674</Id>
+					<Name><![CDATA[D_0 - H]]></Name>
+					<X>157.795</X><Y>379.568</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801618656" TargetId="1791803053842" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>355</X><Y>127</Y></Direction>
+					<Id>1791803748550</Id>
+					<Name><![CDATA[D_1 - H]]></Name>
+					<X>320.792</X><Y>379.568</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801622431" TargetId="1791803053842" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>146</X><Y>127</Y></Direction>
+					<Id>1791803757521</Id>
+					<Name><![CDATA[D_2 - H]]></Name>
+					<X>530.182</X><Y>379.568</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801623331" TargetId="1791803053842" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-20</X><Y>127</Y></Direction>
+					<Id>1791803765515</Id>
+					<Name><![CDATA[D_3 - H]]></Name>
+					<X>694.432</X><Y>379.568</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791803032449" TargetId="1791803053842" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>99</X><Y>0</Y></Direction>
+					<Id>1791803789224</Id>
+					<Name><![CDATA[Pop - H]]></Name>
+					<X>575.537</X><Y>507.335</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801544748" TargetId="1791803032449" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>414</X><Y>127</Y></Direction>
+					<Id>1791803816446</Id>
+					<Name><![CDATA[D_0 - Pop]]></Name>
+					<X>157.795</X><Y>379.568</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801618656" TargetId="1791803032449" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>252</X><Y>127</Y></Direction>
+					<Id>1791803834633</Id>
+					<Name><![CDATA[D_1 - Pop]]></Name>
+					<X>320.792</X><Y>379.568</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801622431" TargetId="1791803032449" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>42</X><Y>127</Y></Direction>
+					<Id>1791803843573</Id>
+					<Name><![CDATA[D_2 - Pop]]></Name>
+					<X>530.182</X><Y>379.568</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801623331" TargetId="1791803032449" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-123</X><Y>127</Y></Direction>
+					<Id>1791803852584</Id>
+					<Name><![CDATA[D_3 - Pop]]></Name>
+					<X>694.432</X><Y>379.568</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801623339" TargetId="1791803032449" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-153</X><Y>84</Y></Direction>
+					<Id>1791803859700</Id>
+					<Name><![CDATA[N_3 - Pop]]></Name>
+					<X>724.524</X><Y>422.204</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801622437" TargetId="1791803032449" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>95</Y></Direction>
+					<Id>1791803867282</Id>
+					<Name><![CDATA[N_2 - Pop]]></Name>
+					<X>575.319</X><Y>411.793</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801618671" TargetId="1791803032449" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>252</X><Y>90</Y></Direction>
+					<Id>1791803876164</Id>
+					<Name><![CDATA[N_1 - Pop]]></Name>
+					<X>320.792</X><Y>416.75</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801587236" TargetId="1791803032449" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>414</X><Y>90</Y></Direction>
+					<Id>1791803883120</Id>
+					<Name><![CDATA[N_0 - Pop]]></Name>
+					<X>157.795</X><Y>416.75</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801976573" TargetId="1791803006847" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>332</X><Y>31</Y></Direction>
+					<Id>1791803921692</Id>
+					<Name><![CDATA[TFR_D - kCal]]></Name>
+					<X>147.815</X><Y>470.196</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802006169" TargetId="1791803006847" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>332</X><Y>9</Y></Direction>
+					<Id>1791803927505</Id>
+					<Name><![CDATA[TFR_N - kCal]]></Name>
+					<X>147.815</X><Y>491.419</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802088152" TargetId="1791803006847" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>332</X><Y>-33</Y></Direction>
+					<Id>1791803934356</Id>
+					<Name><![CDATA[fW - kCal]]></Name>
+					<X>147.815</X><Y>533.864</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802109270" TargetId="1791803006847" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>332</X><Y>-55</Y></Direction>
+					<Id>1791803940935</Id>
+					<Name><![CDATA[birthsRef - kCal]]></Name>
+					<X>147.815</X><Y>555.087</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801544748" TargetId="1791802337279" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>77</X><Y>0</Y></Direction>
+					<Id>1791804033876</Id>
+					<Name><![CDATA[D_0 - flow]]></Name>
+					<X>157.986</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801587236" TargetId="1791802363110" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>77</X><Y>0</Y></Direction>
+					<Id>1791804092517</Id>
+					<Name><![CDATA[N_0 - flow3]]></Name>
+					<X>157.986</X><Y>417.14</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801618656" TargetId="1791802349309" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>97</X><Y>0</Y></Direction>
+					<Id>1791804110240</Id>
+					<Name><![CDATA[D_1 - flow1]]></Name>
+					<X>321.995</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801622431" TargetId="1791802356271" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>77</X><Y>0</Y></Direction>
+					<Id>1791804115974</Id>
+					<Name><![CDATA[D_2 - flow2]]></Name>
+					<X>530.734</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801622437" TargetId="1791802421809" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>55</X><Y>1</Y></Direction>
+					<Id>1791804132599</Id>
+					<Name><![CDATA[N_2 - flow5]]></Name>
+					<X>575.463</X><Y>411.834</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801544748" TargetId="1791802556106" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>-17</Y></Direction>
+					<Id>1791804256216</Id>
+					<Name><![CDATA[D_0 - flow6]]></Name>
+					<X>157.986</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801587236" TargetId="1791802610048" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>12</Y></Direction>
+					<Id>1791804268351</Id>
+					<Name><![CDATA[N_0 - flow10]]></Name>
+					<X>157.986</X><Y>417.14</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801618656" TargetId="1791802570357" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>-20</Y></Direction>
+					<Id>1791804291697</Id>
+					<Name><![CDATA[D_1 - flow7]]></Name>
+					<X>321.995</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801622431" TargetId="1791802753384" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>-20</Y></Direction>
+					<Id>1791804327497</Id>
+					<Name><![CDATA[D_2 - flow8]]></Name>
+					<X>530.734</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801623331" TargetId="1791802594630" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>-17</Y></Direction>
+					<Id>1791804342623</Id>
+					<Name><![CDATA[D_3 - flow9]]></Name>
+					<X>694.743</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802136122" TargetId="1791802556106" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-187</X><Y>-113</Y></Direction>
+					<Id>1791804356063</Id>
+					<Name><![CDATA[mr_0 - flow6]]></Name>
+					<X>342.106</X><Y>475.25</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802176581" TargetId="1791802570357" Polarity="null">
+					<Height>-68.416</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-25</X><Y>-132</Y></Direction>
+					<Id>1791804402897</Id>
+					<Name><![CDATA[mr_1 - flow7]]></Name>
+					<X>342.106</X><Y>491.114</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802178339" TargetId="1791802753384" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>185</X><Y>-148</Y></Direction>
+					<Id>1791804414725</Id>
+					<Name><![CDATA[mr_2 - flow8]]></Name>
+					<X>342.106</X><Y>506.978</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802180624" TargetId="1791802594630" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>349</X><Y>-161</Y></Direction>
+					<Id>1791804422283</Id>
+					<Name><![CDATA[mr_3 - flow9]]></Name>
+					<X>342.106</X><Y>522.843</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802136122" TargetId="1791802610048" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-212</X><Y>-44</Y></Direction>
+					<Id>1791804582876</Id>
+					<Name><![CDATA[mr_0 - flow10]]></Name>
+					<X>342.234</X><Y>475.502</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802176581" TargetId="1791802627744" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-69</X><Y>-59</Y></Direction>
+					<Id>1791804592984</Id>
+					<Name><![CDATA[mr_1 - flow11]]></Name>
+					<X>342.234</X><Y>491.419</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802178339" TargetId="1791802640167" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>151</X><Y>-81</Y></Direction>
+					<Id>1791804600515</Id>
+					<Name><![CDATA[mr_2 - flow12]]></Name>
+					<X>342.234</X><Y>507.335</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802180624" TargetId="1791802700581" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>281</X><Y>-84</Y></Direction>
+					<Id>1791804643411</Id>
+					<Name><![CDATA[mr_3 - flow13]]></Name>
+					<X>342.234</X><Y>523.253</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801618671" TargetId="1791802627744" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>15</Y></Direction>
+					<Id>1791804656336</Id>
+					<Name><![CDATA[N_1 - flow11]]></Name>
+					<X>321.995</X><Y>417.14</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801622437" TargetId="1791802640167" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>9</X><Y>20</Y></Direction>
+					<Id>1791804664700</Id>
+					<Name><![CDATA[N_2 - flow12]]></Name>
+					<X>575.463</X><Y>411.834</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801623339" TargetId="1791802700581" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>18</Y></Direction>
+					<Id>1791804670891</Id>
+					<Name><![CDATA[N_3 - flow13]]></Name>
+					<X>724.566</X><Y>422.445</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802006169" TargetId="1791803320858" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-69</X><Y>-75</Y></Direction>
+					<Id>1791804759426</Id>
+					<Name><![CDATA[TFR_N - birthsN]]></Name>
+					<X>147.764</X><Y>491.114</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802088152" TargetId="1791803320858" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-69</X><Y>-117</Y></Direction>
+					<Id>1791804766129</Id>
+					<Name><![CDATA[fW - birthsN]]></Name>
+					<X>147.764</X><Y>533.749</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791803006847" TargetId="1791803320858" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-405</X><Y>-86</Y></Direction>
+					<Id>1791804782123</Id>
+					<Name><![CDATA[kCal - birthsN]]></Name>
+					<X>483.79</X><Y>502.021</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801618671" TargetId="1791803320858" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-244</X><Y>0</Y></Direction>
+					<Id>1791804791352</Id>
+					<Name><![CDATA[N_1 - birthsN]]></Name>
+					<X>321.995</X><Y>417.14</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791803006847" TargetId="1791803284122" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-389</X><Y>-123</Y></Direction>
+					<Id>1791804810421</Id>
+					<Name><![CDATA[kCal - birthsD]]></Name>
+					<X>483.79</X><Y>502.021</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801976573" TargetId="1791803284122" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-54</X><Y>-91</Y></Direction>
+					<Id>1791804818866</Id>
+					<Name><![CDATA[TFR_D - birthsD]]></Name>
+					<X>147.764</X><Y>469.796</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802088152" TargetId="1791803284122" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-54</X><Y>-155</Y></Direction>
+					<Id>1791804843873</Id>
+					<Name><![CDATA[fW - birthsD]]></Name>
+					<X>147.764</X><Y>533.749</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801618656" TargetId="1791803284122" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-231</X><Y>0</Y></Direction>
+					<Id>1791804853335</Id>
+					<Name><![CDATA[D_1 - birthsD]]></Name>
+					<X>321.995</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801587236" TargetId="1791802884980" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-50</X><Y>-23</Y></Direction>
+					<Id>1791805105164</Id>
+					<Name><![CDATA[N_0 - flow15]]></Name>
+					<X>157.986</X><Y>417.14</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801544748" TargetId="1791802851938" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>55</X><Y>15</Y></Direction>
+					<Id>1791805116212</Id>
+					<Name><![CDATA[D_0 - flow14]]></Name>
+					<X>157.986</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801618656" TargetId="1791802945115" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-37</X><Y>20</Y></Direction>
+					<Id>1791805120678</Id>
+					<Name><![CDATA[D_1 - flow19]]></Name>
+					<X>321.995</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801618671" TargetId="1791802898880" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>41</X><Y>-17</Y></Direction>
+					<Id>1791805122101</Id>
+					<Name><![CDATA[N_1 - flow16]]></Name>
+					<X>321.995</X><Y>417.14</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801622431" TargetId="1791802957770" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-21</X><Y>15</Y></Direction>
+					<Id>1791805128906</Id>
+					<Name><![CDATA[D_2 - flow20]]></Name>
+					<X>530.734</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801623331" TargetId="1791802967039" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-21</X><Y>20</Y></Direction>
+					<Id>1791805128908</Id>
+					<Name><![CDATA[D_3 - flow21]]></Name>
+					<X>694.743</X><Y>380</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801622437" TargetId="1791802915162" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>0</X><Y>-17</Y></Direction>
+					<Id>1791805135764</Id>
+					<Name><![CDATA[N_2 - flow17]]></Name>
+					<X>575.463</X><Y>411.834</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791801623339" TargetId="1791802924516" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>55</X><Y>-28</Y></Direction>
+					<Id>1791805135766</Id>
+					<Name><![CDATA[N_3 - flow18]]></Name>
+					<X>724.566</X><Y>422.445</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791803284122" TargetId="1791803232246" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>708</X><Y>90</Y></Direction>
+					<Id>1791805441752</Id>
+					<Name><![CDATA[birthsD - births]]></Name>
+					<X>96.356</X><Y>379.568</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791803320858" TargetId="1791803232246" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>725</X><Y>53</Y></Direction>
+					<Id>1791805451148</Id>
+					<Name><![CDATA[birthsN - births]]></Name>
+					<X>81.31</X><Y>416.75</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791807524370" TargetId="1791801544748" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-123</X><Y>-171</Y></Direction>
+					<Id>1791807788494</Id>
+					<Name><![CDATA[dshare_0 - D_0]]></Name>
+					<X>276.907</X><Y>549.613</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791807524370" TargetId="1791801587236" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-123</X><Y>-133</Y></Direction>
+					<Id>1791807801036</Id>
+					<Name><![CDATA[dshare_0 - N_0]]></Name>
+					<X>276.907</X><Y>549.613</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791807563044" TargetId="1791801618656" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-153</X><Y>-186</Y></Direction>
+					<Id>1791807819246</Id>
+					<Name><![CDATA[dshare_1 - D_1]]></Name>
+					<X>471.25</X><Y>565.478</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791807563044" TargetId="1791801618671" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-153</X><Y>-149</Y></Direction>
+					<Id>1791807825968</Id>
+					<Name><![CDATA[dshare_1 - N_1]]></Name>
+					<X>471.25</X><Y>565.478</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791807563569" TargetId="1791801622431" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>251</X><Y>-202</Y></Direction>
+					<Id>1791807833711</Id>
+					<Name><![CDATA[dshare_2 - D_2]]></Name>
+					<X>276.907</X><Y>581.342</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791807563569" TargetId="1791801622437" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>297</X><Y>-170</Y></Direction>
+					<Id>1791807841074</Id>
+					<Name><![CDATA[dshare_2 - N_2]]></Name>
+					<X>276.907</X><Y>581.342</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791807563962" TargetId="1791801623331" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>312</X><Y>-205</Y></Direction>
+					<Id>1791807854192</Id>
+					<Name><![CDATA[dshare_3 - D_3]]></Name>
+					<X>379.721</X><Y>583.821</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791807563962" TargetId="1791801623339" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>342</X><Y>-162</Y></Direction>
+					<Id>1791807862288</Id>
+					<Name><![CDATA[dshare_3 - N_3]]></Name>
+					<X>379.721</X><Y>583.821</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791807563044" TargetId="1791803006847" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>7</X><Y>-65</Y></Direction>
+					<Id>1791808056025</Id>
+					<Name><![CDATA[dshare_1 - kCal]]></Name>
+					<X>471.847</X><Y>565.697</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805687132" TargetId="1791802924516" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>152</X><Y>-172</Y></Direction>
+					<Id>1791808256346</Id>
+					<Name><![CDATA[entryNow - flow18]]></Name>
+					<X>626.727</X><Y>565.478</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805687132" TargetId="1791802884980" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-519</X><Y>-172</Y></Direction>
+					<Id>1791808283270</Id>
+					<Name><![CDATA[entryNow - flow15]]></Name>
+					<X>626.727</X><Y>565.478</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805687132" TargetId="1791802898880" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-266</X><Y>-166</Y></Direction>
+					<Id>1791808286368</Id>
+					<Name><![CDATA[entryNow - flow16]]></Name>
+					<X>626.727</X><Y>565.478</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805687132" TargetId="1791802915162" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-54</X><Y>-171</Y></Direction>
+					<Id>1791808291667</Id>
+					<Name><![CDATA[entryNow - flow17]]></Name>
+					<X>626.727</X><Y>565.478</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805692233" TargetId="1791802945115" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-342</X><Y>-129</Y></Direction>
+					<Id>1791808359070</Id>
+					<Name><![CDATA[exitNow - flow19]]></Name>
+					<X>626.727</X><Y>528.296</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805692233" TargetId="1791802957770" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-117</X><Y>-134</Y></Direction>
+					<Id>1791808365424</Id>
+					<Name><![CDATA[exitNow - flow20]]></Name>
+					<X>626.727</X><Y>528.296</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805692233" TargetId="1791802967039" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>47</X><Y>-129</Y></Direction>
+					<Id>1791808394343</Id>
+					<Name><![CDATA[exitNow - flow21]]></Name>
+					<X>626.727</X><Y>528.296</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802049805" TargetId="1791805927509" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>578</X><Y>15</Y></Direction>
+					<Id>1791808412353</Id>
+					<Name><![CDATA[exitRate - entry0]]></Name>
+					<X>147.815</X><Y>512.641</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791806090779" TargetId="1791805927509" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>578</X><Y>-59</Y></Direction>
+					<Id>1791808441169</Id>
+					<Name><![CDATA[H0 - entry0]]></Name>
+					<X>147.815</X><Y>586.92</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805921741" TargetId="1791805687132" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-108</X><Y>68</Y></Direction>
+					<Id>1791808496445</Id>
+					<Name><![CDATA[ramp - entryNow]]></Name>
+					<X>731.071</X><Y>496.724</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805927509" TargetId="1791805687132" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-108</X><Y>36</Y></Direction>
+					<Id>1791808501422</Id>
+					<Name><![CDATA[entry0 - entryNow]]></Name>
+					<X>731.071</X><Y>528.559</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805921741" TargetId="1791805692233" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-108</X><Y>31</Y></Direction>
+					<Id>1791808531282</Id>
+					<Name><![CDATA[ramp - exitNow]]></Name>
+					<X>731.071</X><Y>496.724</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791802049805" TargetId="1791805692233" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>475</X><Y>15</Y></Direction>
+					<Id>1791808548064</Id>
+					<Name><![CDATA[exitRate - exitNow]]></Name>
+					<X>147.815</X><Y>512.641</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791805864046" TargetId="1791805687132" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-160</X><Y>4</Y></Direction>
+					<Id>1791808606797</Id>
+					<Name><![CDATA[entryMult - entryNow]]></Name>
+					<X>782.916</X><Y>560.392</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791808715879" TargetId="1791805692233" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-291</X><Y>31</Y></Direction>
+					<Id>1791808799769</Id>
+					<Name><![CDATA[exitMult - exitNow]]></Name>
+					<X>912.528</X><Y>496.724</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791808721604" TargetId="1791805921741" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-200</X><Y>-39</Y></Direction>
+					<Id>1791808806909</Id>
+					<Name><![CDATA[policyT0 - ramp]]></Name>
+					<X>925.489</X><Y>533.864</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791808718765" TargetId="1791805921741" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-172</X><Y>-23</Y></Direction>
+					<Id>1791808851603</Id>
+					<Name><![CDATA[policyRamp - ramp]]></Name>
+					<X>899.568</X><Y>517.947</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				
+				<Link SourceId="1791808724242" TargetId="1791805921741" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityType>NONE</PolarityType>
+					<PolarityCustomChar>x</PolarityCustomChar>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-200</X><Y>-59</Y></Direction>
+					<Id>1791808864185</Id>
+					<Name><![CDATA[policyOn - ramp]]></Name>
+					<X>925.489</X><Y>555.087</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color>-11832691</Color>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+			</Dependences>
+
+
+			<Presentation>
+				<Level>
+					<Id>1791797909586</Id>
+					<Name><![CDATA[level]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
+
+			<Presentation>
+    			<TimePlot>
+					<Id>1791803074339</Id>
+					<Name><![CDATA[plot]]></Name>
+					<X>40</X><Y>40</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<RecurrenceProperties>
+						<Id>1791803074337</Id>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1791878400000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</RecurrenceCode>
+					</RecurrenceProperties>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>320</Width>
+					<Height>290</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>240</Width>
+						<Height>200</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>YEAR</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Population with stimulation]]></Title>
+					<Id>1791803076203</Id>
+					<Expression><![CDATA[dataset]]></Expression>
+					<Color>-4343957</Color>
+					<Expression2><![CDATA[Pop]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>30</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[26]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1791813833463</Id>
+					<Name><![CDATA[plot1]]></Name>
+					<X>380</X><Y>50</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<RecurrenceProperties>
+						<Id>1791813833461</Id>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1791878400000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</RecurrenceCode>
+					</RecurrenceProperties>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>290</Width>
+					<Height>280</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>210</Width>
+						<Height>190</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[H with stimulation]]></Title>
+					<Id>1791813873617</Id>
+					<Expression><![CDATA[dataset1]]></Expression>
+					<Color>-12004916</Color>
+					<Expression2><![CDATA[H]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[26]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+    			<TimePlot>
+					<Id>1791813837512</Id>
+					<Name><![CDATA[plot2]]></Name>
+					<X>670</X><Y>50</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<RecurrenceProperties>
+						<Id>1791813837510</Id>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1791878400000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
+						</RecurrenceCode>
+					</RecurrenceProperties>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>320</Width>
+					<Height>270</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>240</Width>
+						<Height>180</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<TimeWindowsMovementType>MOVEMENT_WITH_TIME</TimeWindowsMovementType>		
+					<TimeWindowUnits>MODEL_TIME_UNIT</TimeWindowUnits>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[births stimulation]]></Title>
+					<Id>1791813916724</Id>
+					<Expression><![CDATA[dataset1]]></Expression>
+					<Color>-4565549</Color>
+					<Expression2><![CDATA[births ]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<TimeWindowExpression><![CDATA[26]]></TimeWindowExpression>
+					<FillAreaUnderLine>false</FillAreaUnderLine>
+					<LabelFormat>MODEL_TIME_UNITS</LabelFormat>
+    			</TimePlot>
+			</Presentation>
+
+				</Level>
+			</Presentation>
+
+		</ActiveObjectClass>
+	</ActiveObjectClasses>
+	<DifferentialEquationsMethod>EULER</DifferentialEquationsMethod>
+	<MixedEquationsMethod>RK45_NEWTON</MixedEquationsMethod>
+	<AlgebraicEquationsMethod>MODIFIED_NEWTON</AlgebraicEquationsMethod>
+	<AbsoluteAccuracy>1.0E-5</AbsoluteAccuracy>
+	<FixedTimeStep>0.001</FixedTimeStep>
+	<RelativeAccuracy>1.0E-5</RelativeAccuracy>
+	<TimeAccuracy>1.0E-5</TimeAccuracy>
+	<Frame>
+		<Id>1791797909560</Id>
+		<Width>1000</Width>
+		<Height>600</Height>
+	</Frame>
+	<Database>
+		<Id>1791797909555</Id>
+		<Logging>false</Logging>
+		<AutoExport>false</AutoExport>
+		<ShutdownCompact>false</ShutdownCompact>
+		<ImportSettings>
+		</ImportSettings>
+		<ExportSettings>
+		</ExportSettings>
+	</Database>
+
+	<RunConfiguration ActiveObjectClassId="1791797909569">
+		<Id>1791797909690</Id>
+		<Name><![CDATA[RunConfiguration]]></Name>
+		<MaximumMemory>512</MaximumMemory>
+		<ModelTimeProperties>
+			<StopOption><![CDATA[Stop at specified time]]></StopOption>
+			<InitialDate><![CDATA[1791763200000]]></InitialDate>	
+			<InitialTime><![CDATA[0.0]]></InitialTime>	
+			<FinalDate><![CDATA[1794441600000]]></FinalDate>	
+			<FinalTime><![CDATA[100.0]]></FinalTime>	
+		</ModelTimeProperties>
+		<AnimationProperties>
+			<StopNever>true</StopNever>
+			<ExecutionMode>realTimeScaled</ExecutionMode>
+			<RealTimeScale>1.0</RealTimeScale>
+			<EnableZoomAndPanning>true</EnableZoomAndPanning>
+			<EnableDeveloperPanel>false</EnableDeveloperPanel>
+			<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+		</AnimationProperties>
+		<Inputs>		
+		</Inputs>
+		<Outputs>
+		</Outputs>
+	</RunConfiguration>
+	<Experiments>
+		<!--   =========   Simulation Experiment   ========  -->
+		<SimulationExperiment ActiveObjectClassId="1791797909569">
+			<Id>1791797909684</Id>
+			<Name><![CDATA[Simulation]]></Name>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<MaximumMemory>512</MaximumMemory>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+			<SeedValue>1</SeedValue>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+
+			<Presentation>
+				<Text>
+					<Id>1791797909687</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>50</X><Y>30</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[demography_2026_datathon2026]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Presentation>
+
+			<Parameters>
+				<Parameter>
+					<ParameterName><![CDATA[TFR_D]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[TFR_N]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[exitRate]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[fW]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[birthsRef]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[mr_0]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[mr_1]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[mr_2]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[mr_3]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[entryMult]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[H0]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[dshare_0]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[dshare_1]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[dshare_2]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[dshare_3]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[exitMult]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[policyRamp]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[policyT0]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[policyOn]]></ParameterName>
+				</Parameter>
+			</Parameters>
+			<PresentationProperties>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
+				<Title><![CDATA[demography_2026_datathon2026 : Simulation]]></Title>
+				<EnableDeveloperPanel>true</EnableDeveloperPanel>
+				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+				<RealTimeScale>1.0</RealTimeScale>
+			</PresentationProperties>
+			<ModelTimeProperties>
+				<StopOption><![CDATA[Stop at specified time]]></StopOption>
+				<InitialDate><![CDATA[1791763200000]]></InitialDate>
+				<InitialTime><![CDATA[0.0]]></InitialTime>
+				<FinalDate><![CDATA[2611699200000]]></FinalDate>
+				<FinalTime><![CDATA[26.0]]></FinalTime>
+			</ModelTimeProperties>
+			<BypassInitialScreen>true</BypassInitialScreen>
+		</SimulationExperiment>
+		<!--   =========  Parameter Variation Experiment   ========  -->
+		<ParamVariationExperiment ActiveObjectClassId="1791797909569">
+			<Id>1791814585496</Id>
+			<Name><![CDATA[CompareScenarios]]></Name>
+			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
+			<MaximumMemory>512</MaximumMemory>
+			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+			<SeedValue>1</SeedValue>
+			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+			<VmArgs><![CDATA[]]></VmArgs>
+			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+
+			<Presentation>
+				<Text>
+					<Id>1791816569515</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>30</X><Y>10</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[demography_2026_datathon2026 : CompareScenarios]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>24</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569516</Id>
+					<Name><![CDATA[text1]]></Name>
+					<X>18.503</X><Y>74.835</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[Iterations completed:]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569517</Id>
+					<Name><![CDATA[text2]]></Name>
+					<X>180.058</X><Y>74.835</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format(getNumberOfCompletedIterations())]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569518</Id>
+					<Name><![CDATA[text3]]></Name>
+					<X>18.503</X><Y>98.004</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12566464</Color>
+					<Text><![CDATA[Parameters]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>1</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Line>
+					<Id>1791816569519</Id>
+					<Name><![CDATA[line]]></Name>
+					<X>50</X><Y>680</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>2</LineWidth>
+					<LineColor>-12566464</LineColor>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<BeginArrowSize>1</BeginArrowSize>
+					<BeginArrowStyle>0</BeginArrowStyle>
+					<EndArrowSize>1</EndArrowSize>
+					<EndArrowStyle>0</EndArrowStyle>
+					<Dx>178</Dx>
+					<Dy>0</Dy>
+					<Dz>0</Dz>
+				</Line>
+				<Text>
+					<Id>1791816569520</Id>
+					<Name><![CDATA[text4]]></Name>
+					<X>18.503</X><Y>128.899</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[TFR_D]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569521</Id>
+					<Name><![CDATA[text5]]></Name>
+					<X>180.058</X><Y>128.899</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( TFR_D )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1791816569522</Id>
+					<Name><![CDATA[rectangle]]></Name>
+					<X>10</X><Y>144.345</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>178.56104651162792</Width>
+					<Height>23.169865592471638</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-657931</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1791816569523</Id>
+					<Name><![CDATA[text6]]></Name>
+					<X>18.503</X><Y>152.067</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[TFR_N]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569524</Id>
+					<Name><![CDATA[text7]]></Name>
+					<X>180.058</X><Y>152.067</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( TFR_N )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569525</Id>
+					<Name><![CDATA[text8]]></Name>
+					<X>18.503</X><Y>175.235</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[exitRate]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569526</Id>
+					<Name><![CDATA[text9]]></Name>
+					<X>180.058</X><Y>175.235</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( exitRate )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1791816569527</Id>
+					<Name><![CDATA[rectangle1]]></Name>
+					<X>10</X><Y>190.685</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>178.56104651162792</Width>
+					<Height>23.169865592471638</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-657931</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1791816569528</Id>
+					<Name><![CDATA[text10]]></Name>
+					<X>18.503</X><Y>198.404</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[fW]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569529</Id>
+					<Name><![CDATA[text11]]></Name>
+					<X>180.058</X><Y>198.404</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( fW )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569530</Id>
+					<Name><![CDATA[text12]]></Name>
+					<X>18.503</X><Y>221.575</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[birthsRef]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569531</Id>
+					<Name><![CDATA[text13]]></Name>
+					<X>180.058</X><Y>221.575</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( birthsRef )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1791816569532</Id>
+					<Name><![CDATA[rectangle2]]></Name>
+					<X>10</X><Y>237.022</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>178.56104651162792</Width>
+					<Height>23.169865592471638</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-657931</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1791816569533</Id>
+					<Name><![CDATA[text14]]></Name>
+					<X>18.503</X><Y>244.748</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[mr_0]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569534</Id>
+					<Name><![CDATA[text15]]></Name>
+					<X>180.058</X><Y>244.748</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( mr_0 )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569535</Id>
+					<Name><![CDATA[text16]]></Name>
+					<X>18.503</X><Y>267.914</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[mr_1]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569536</Id>
+					<Name><![CDATA[text17]]></Name>
+					<X>180.058</X><Y>267.914</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( mr_1 )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1791816569537</Id>
+					<Name><![CDATA[rectangle3]]></Name>
+					<X>10</X><Y>283.362</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>178.56104651162792</Width>
+					<Height>23.169865592471638</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-657931</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1791816569538</Id>
+					<Name><![CDATA[text18]]></Name>
+					<X>18.503</X><Y>291.085</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[mr_2]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569539</Id>
+					<Name><![CDATA[text19]]></Name>
+					<X>180.058</X><Y>291.085</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( mr_2 )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569540</Id>
+					<Name><![CDATA[text20]]></Name>
+					<X>18.503</X><Y>314.256</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[mr_3]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569541</Id>
+					<Name><![CDATA[text21]]></Name>
+					<X>180.058</X><Y>314.256</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( mr_3 )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1791816569542</Id>
+					<Name><![CDATA[rectangle4]]></Name>
+					<X>10</X><Y>329.703</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>178.56104651162792</Width>
+					<Height>23.169865592471638</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-657931</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1791816569543</Id>
+					<Name><![CDATA[text22]]></Name>
+					<X>18.503</X><Y>337.427</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[entryMult]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569544</Id>
+					<Name><![CDATA[text23]]></Name>
+					<X>180.058</X><Y>337.427</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( entryMult )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569545</Id>
+					<Name><![CDATA[text24]]></Name>
+					<X>18.503</X><Y>360.599</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[H0]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569546</Id>
+					<Name><![CDATA[text25]]></Name>
+					<X>180.058</X><Y>360.599</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( H0 )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1791816569547</Id>
+					<Name><![CDATA[rectangle5]]></Name>
+					<X>10</X><Y>376.04</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>178.56104651162792</Width>
+					<Height>23.169865592471638</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-657931</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1791816569548</Id>
+					<Name><![CDATA[text26]]></Name>
+					<X>18.503</X><Y>383.766</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[dshare_0]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569549</Id>
+					<Name><![CDATA[text27]]></Name>
+					<X>180.058</X><Y>383.766</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( dshare_0 )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569550</Id>
+					<Name><![CDATA[text28]]></Name>
+					<X>18.503</X><Y>406.936</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[dshare_1]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569551</Id>
+					<Name><![CDATA[text29]]></Name>
+					<X>180.058</X><Y>406.936</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( dshare_1 )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1791816569552</Id>
+					<Name><![CDATA[rectangle6]]></Name>
+					<X>10</X><Y>422.383</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>178.56104651162792</Width>
+					<Height>23.169865592471638</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-657931</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1791816569553</Id>
+					<Name><![CDATA[text30]]></Name>
+					<X>18.503</X><Y>430.103</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[dshare_2]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569554</Id>
+					<Name><![CDATA[text31]]></Name>
+					<X>180.058</X><Y>430.103</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( dshare_2 )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569555</Id>
+					<Name><![CDATA[text32]]></Name>
+					<X>18.503</X><Y>453.275</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[dshare_3]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569556</Id>
+					<Name><![CDATA[text33]]></Name>
+					<X>180.058</X><Y>453.275</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( dshare_3 )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1791816569557</Id>
+					<Name><![CDATA[rectangle7]]></Name>
+					<X>10</X><Y>468.722</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>178.56104651162792</Width>
+					<Height>23.169865592471638</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-657931</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1791816569558</Id>
+					<Name><![CDATA[text34]]></Name>
+					<X>18.503</X><Y>476.446</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[exitMult]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569559</Id>
+					<Name><![CDATA[text35]]></Name>
+					<X>180.058</X><Y>476.446</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( exitMult )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569560</Id>
+					<Name><![CDATA[text36]]></Name>
+					<X>18.503</X><Y>499.617</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[policyRamp]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569561</Id>
+					<Name><![CDATA[text37]]></Name>
+					<X>180.058</X><Y>499.617</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( policyRamp )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1791816569562</Id>
+					<Name><![CDATA[rectangle8]]></Name>
+					<X>10</X><Y>515.059</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>178.56104651162792</Width>
+					<Height>23.169865592471638</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-657931</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1791816569563</Id>
+					<Name><![CDATA[text38]]></Name>
+					<X>18.503</X><Y>522.788</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[policyT0]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569564</Id>
+					<Name><![CDATA[text39]]></Name>
+					<X>180.058</X><Y>522.788</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( policyT0 )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569565</Id>
+					<Name><![CDATA[text40]]></Name>
+					<X>18.503</X><Y>545.954</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12171190</Color>
+					<Text><![CDATA[policyOn]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1791816569566</Id>
+					<Name><![CDATA[text41]]></Name>
+					<X>180.058</X><Y>545.954</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<VisibleCode><![CDATA[getCurrentIteration() > 0]]></VisibleCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12042869</Color>
+					<Text><![CDATA[?]]></Text>
+					<TextCode><![CDATA[format( policyOn )]]></TextCode>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>12</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>RIGHT</Alignment>
+				</Text>
+			</Presentation>
+
+			<AllowParallelEvaluations>true</AllowParallelEvaluations>
+			<UseFreeformParameters>true</UseFreeformParameters>
+			<NumberOfRuns>2</NumberOfRuns>
+			<FreeformParamValue>	
+				<Id>1791801976573</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791802006169</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791802049805</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791802088152</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791802109270</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791802136122</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791802176581</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791802178339</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791802180624</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791805864046</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791806090779</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791807524370</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791807563044</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791807563569</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791807563962</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791808715879</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791808718765</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791808721604</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1791808724242</Id>
+			</FreeformParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791801976573</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791802006169</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791802049805</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791802088152</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791802109270</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791802136122</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791802176581</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791802178339</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791802180624</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791805864046</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791806090779</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791807524370</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791807563044</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791807563569</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791807563962</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791808715879</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791808718765</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791808721604</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1791808724242</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<ModelTimeProperties>
+				<StopOption><![CDATA[Stop at specified time]]></StopOption>
+				<InitialDate><![CDATA[1791763200000]]></InitialDate>	
+				<InitialTime><![CDATA[0.0]]></InitialTime>	
+				<FinalDate><![CDATA[2611699200000]]></FinalDate>	
+				<FinalTime><![CDATA[26.0]]></FinalTime>	
+			</ModelTimeProperties>
+			<PresentationProperties>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<Title><![CDATA[demography_2026_datathon2026 : CompareScenarios]]></Title>
+				<EnableDeveloperPanel>true</EnableDeveloperPanel>
+				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+			</PresentationProperties>
+			<ReplicationsProperties>
+				<UseReplication>false</UseReplication>
+				<FixedReplicationsNumber>true</FixedReplicationsNumber>
+				<ReplicationPerIteration>10</ReplicationPerIteration>
+				<MinimumReplication>2</MinimumReplication>
+				<MaximumReplication>10</MaximumReplication>
+				<ConfidenceLevel>LEVEL_80</ConfidenceLevel>
+				<ErrorPercent>0.5</ErrorPercent>
+				<ExpressionForConfidenceComputation><![CDATA[0]]></ExpressionForConfidenceComputation>
+			</ReplicationsProperties>
+		</ParamVariationExperiment>	
+	</Experiments>
+    <RequiredLibraryReference>
+		<LibraryName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></LibraryName>
+		<VersionMajor>1</VersionMajor>
+		<VersionMinor>0</VersionMinor>
+		<VersionBuild>0</VersionBuild>
+    </RequiredLibraryReference>
+</Model>
+<ConvertersApplied>
+	<Uuid>9f7858c9-b2c8-4ead-9244-fd08833f642b</Uuid>
+	<Uuid>404652e6-561a-404c-aab2-ab7415f40ef5</Uuid>
+	<Uuid>6fd6cd57-6dfe-4fc6-be0b-c74065351957</Uuid>
+	<Uuid>3325dc48-3ad4-41e3-836f-dfd0e98fe1ed</Uuid>
+	<Uuid>bb27038a-0f3a-48bb-b235-4a44066a14aa</Uuid>
+	<Uuid>3f69ef3d-706e-41a6-8af0-11658c5eef68</Uuid>
+	<Uuid>3f6fe405-e047-4304-91d6-6eee206d1106</Uuid>
+	<Uuid>820d2b51-5b4a-48e7-b0b6-e46418e3c0f2</Uuid>
+	<Uuid>630818fa-8975-4b70-976f-03180dce01db</Uuid>
+	<Uuid>7c7e471c-004e-495e-a4ad-d840620ab38e</Uuid>
+	<Uuid>3e38ff63-1f70-4ec0-b42c-e879b146785d</Uuid>
+	<Uuid>b1eb86e4-14b3-405c-8257-56b80f1b485d</Uuid>
+	<Uuid>d55f9fb6-86bb-45ea-9db1-79cecfa0ce91</Uuid>
+	<Uuid>ab77aafd-8f02-4354-b789-928d45b1f73c</Uuid>
+	<Uuid>e4f14fd7-1c4a-42e9-b91d-db2415f475db</Uuid>
+	<Uuid>6d208120-6c7a-45a6-b411-402f18890d9b</Uuid>
+	<Uuid>1816cdd0-177c-4973-9e88-dd8b95318556</Uuid>
+	<Uuid>5c23f62f-06dc-46ad-8ead-688ec434e3e5</Uuid>
+	<Uuid>5c7d7990-3f35-41eb-ae16-d0c16098acc6</Uuid>
+	<Uuid>02a16c52-a834-4f30-b6af-a6aee51a294e</Uuid>
+	<Uuid>f0988929-2718-4984-a1b6-c1f2ce152f1f</Uuid>
+	<Uuid>1c9d9cfe-ea2b-43f9-8f62-dc31d8ed3ae1</Uuid>
+	<Uuid>34cb742a-8ba4-47a7-87e6-f2685fe69e97</Uuid>
+	<Uuid>4fe10751-c399-4752-94b7-30113ad45070</Uuid>
+	<Uuid>c13fe5ac-6466-446e-886a-12df1431b1eb</Uuid>
+	<Uuid>714f9ca2-426e-4bff-8569-2d18f58fdcf8</Uuid>
+	<Uuid>045aeb5f-1087-4ac7-9702-a49404e7f7e8</Uuid>
+	<Uuid>840e9a0a-de98-4b7d-a172-f9bbda2d6b98</Uuid>
+	<Uuid>e342358b-75ed-4812-9376-6043fb6cb473</Uuid>
+	<Uuid>f3d5ccdc-1bb3-466f-871d-f6b92a26cbb4</Uuid>
+	<Uuid>59acb6fb-561c-4038-b722-a596a748b3c7</Uuid>
+	<Uuid>be7e6726-05c0-4228-821d-a8df91aeb5bc</Uuid>
+	<Uuid>df4a6a60-9ce8-4c6c-91c0-ad5a5d732259</Uuid>
+	<Uuid>47491eb9-4606-42bd-8399-125a2b95fded</Uuid>
+	<Uuid>9b2d1306-5d19-439a-8f2c-b144dd7e22fa</Uuid>
+	<Uuid>ef421152-8732-4f97-9acb-c8e9a6890d5e</Uuid>
+	<Uuid>d48f8080-25b1-44f5-8322-7bf2712ff974</Uuid>
+	<Uuid>6c4de826-daad-4cd4-b703-51dfe803e822</Uuid>
+	<Uuid>01af22d6-6889-4e98-a3df-e6eddc40fc92</Uuid>
+	<Uuid>ea3b3dbe-cca2-4bde-957b-feaef7e18789</Uuid>
+	<Uuid>e737c8c6-b526-4f88-b89e-554e205b0614</Uuid>
+	<Uuid>efd24e87-d7f7-425f-9cb0-3ee17c7b2116</Uuid>
+	<Uuid>a62607e6-047e-4910-a1ec-5426bf9283b5</Uuid>
+	<Uuid>64dceb5b-de05-47c7-8e40-e9b293e80d75</Uuid>
+	<Uuid>8d51c652-6aee-4de8-ba03-47b289a13ec5</Uuid>
+	<Uuid>51d7b5ce-5664-4750-b1a0-fabcdc31e49a</Uuid>
+	<Uuid>6522e3af-aa9e-421c-b667-e11db73cd8ca</Uuid>
+	<Uuid>9ac073a0-7abf-4dff-826f-9c44d4780590</Uuid>
+	<Uuid>2da9c21c-adc7-405a-a36e-46fbd9dfcd42</Uuid>
+	<Uuid>fe4d1053-9c84-4221-bac7-cb489a7064ff</Uuid>
+	<Uuid>1f005f88-e6d7-4bdc-81fa-3acf4c89cf64</Uuid>
+	<Uuid>42dc5a7c-d7b1-4653-92b9-9359b46cc2d4</Uuid>
+	<Uuid>e25721a9-34f9-479c-a4c3-31f5ec9e117d</Uuid>
+	<Uuid>506d1de3-06df-4131-9e88-e43f1768e3d8</Uuid>
+	<Uuid>e6625695-25a2-43d0-9056-1e9a1a594b1e</Uuid>
+	<Uuid>91990287-4edf-4e38-aa6c-66d0e906807b</Uuid>
+	<Uuid>2216cdd0-177c-5678-9e88-dd8b95312234</Uuid>
+	<Uuid>1737c8c6-b526-4dd8-589e-ee4e205b06f4</Uuid>
+	<Uuid>6a43bef6-8b70-4253-a828-82c3ab399655</Uuid>
+	<Uuid>0a27038a-0f3a-48bb-b235-4a44066a1402</Uuid>
+	<Uuid>0a9ec2c3-5e18-4c0a-a183-fd86d9d9a08b</Uuid>
+	<Uuid>2216cdd0-177c-5678-9e88-dd8b95313334</Uuid>
+	<Uuid>92afa9c7-cb47-45df-8559-1b947cbeacee</Uuid>
+	<Uuid>896f4ff2-c039-43e1-8c65-183592ba63e2</Uuid>
+	<Uuid>eada5e9c-56b7-4492-b3b1-03f1eb36a209</Uuid>
+	<Uuid>2216cdd0-177c-5678-9e88-dd8b95313335</Uuid>
+	<Uuid>5b8ebeed-6b58-4c3a-8d5f-0958b1a90ce6</Uuid>
+	<Uuid>c39ae7a6-edcf-4673-923a-96829a5df80c</Uuid>
+	<Uuid>af233c46-2e37-4dd0-a79f-cc6184140b1c</Uuid>
+	<Uuid>53a0a65d-9a11-4cd9-8e3a-c6852af4d6e3</Uuid>
+	<Uuid>01593659-ae66-4c89-b2b6-9a95d1c1f509</Uuid>
+</ConvertersApplied>
+</AnyLogicWorkspace>
